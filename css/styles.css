@@ -831,7 +831,8 @@ img {
 
   opacity: 1;
   visibility: visible;
-  transition: opasity 350ms var(--timing-fanction);
+  transition: opasity 350ms var(--timing-fanction),
+    visibility 350ms var(--timing-fanction);
 }
 
 .backdrop.is-hidden {
@@ -846,6 +847,7 @@ img {
 }
 
 .modal {
+  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -860,6 +862,8 @@ img {
 }
 
 .modal-btn {
+  display: flex;
+  align-items: center;
   position: absolute;
   width: 30px;
   height: 30px;
@@ -869,4 +873,8 @@ img {
   background-color: var(--color-modal);
   border-radius: 50%;
   border: 1px solid var(--color-shadow-one);
+}
+
+.icon-modal {
+  display: block;
 }
